@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeworkII</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="index.css">
+    
+    <!--<link rel="stylesheet/less" type="text/css" href="index.less" />
+     <script src="scripts/less.js" type="text/javascript"></script>-->
+
+     <!-- NOT -->
+     <!-- Less'i sliderı eklediğimde kullanamadım sliderı eklediğim zaman kullanamıyordum problemi çözemedim
+         o yüzden yeniden sayfa oluşturdum yeni css dosyası hazırladım,
+         daha önceki yazdığım less kodları index.less dosyası içinde bıraktım.-->
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-dark bg-light ">
+            <div class="container-fluid" id="navDiv">
+                <div class="navbar-brand mr-2 mb-0 bg-light logo">
+                    <section id="logo">
+                        <img class="carousel" src="images/yeni-gelenler@2x.jpg" alt="logo"></img>
+                    </section>
+                </div>
+
+                <div class="btn-group" id="dropdownMenu">
+                    <button type="button" class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Elektronik</a>
+                      <a class="dropdown-item" href="#">Giyim</a>
+                      <a class="dropdown-item" href="#">Müzik Aleti</a>
+                      <a class="dropdown-item" href="#">Ev Eşyası</a>
+                      <a class="dropdown-item" href="#">Aksesuar</a>
+                    </div>
+                </div>
+
+                <form class="d-flex navbar-expand-sm align-items-sm-center" id="search">
+                    <input class="form-control" type="search" placeholder="Ara.." aria-label="Search">
+                    <button class="btn btn-light searchButton" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                
+               
+                <div class="p-2 mx-2 d-flex nav-options" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto justify-content-around flex-row">
+                        <li class="nav-item active mx-2">
+                            <button class="btn"><i class="far fa-user"> Giriş</i></button>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <button class="btn"><i class="far fa-heart"> Favoriler</i></button>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <button class="btn"><i class="fas fa-shopping-basket"> Sepetim</i></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <div class="nav-scroller py-1 m-2">
+            <nav class="nav d-flex justify-content-around">
+                <a class="p-2 text-muted" href="#">Elektronik</a>
+                <a class="p-2 text-muted" href="#">Giyim</a>
+                <a class="p-2 text-muted" href="#">Müzik Aleti</a>
+                <a class="p-2 text-muted" href="#">Ev Eşyası</a>
+                <a class="p-2 text-muted" href="#">Aksesuar</a>
+            </nav>
+        </div>
+    </section>
+    
+
+    <section>
+        <div class="banner-top-web d-flex justify-content-center">
+            <h1 class="align-self-center banner-top-text">Yazılı Banner</h1>
+        </div>
+    </section>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md">
+                <img class="banner" src="images/5.jpg" alt="banner1">
+            </div>
+            <div class="col-md">
+                <img class="banner" src="images/6.jpg" alt="banner2">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/4.jpg" class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777" />
+                </img>
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <a class="btn btn-lg btn-primary" href="#" role="button">Ürüne Git</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/2.jpg" class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777" />
+                </img>
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <a class="btn btn-lg btn-primary" href="#" role="button">Ürüne Git</a></p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </a>
+    </div>
+
+
+
+    
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+       <script src="scripts/index.js" type="text/javascript"></script>
+    
+        
+</body>
+
+</html>
